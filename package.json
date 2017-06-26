@@ -1,0 +1,28 @@
+{
+  "name": "secrets-server",
+  "version": "0.0.1",
+  "description": "stop hardcoding, committing or jotting down secrets",
+  "main": "secrets-server.js",
+  "scripts": {
+    "test": "./test/teardown.sh; ./test/simple-test.sh; ./test/teardown.sh; ./test/simple-test2.sh; ./test/teardown.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chickenninja/secrets-server.git"
+  },
+  "keywords": [
+    "secrets",
+    "server",
+    "nodejs",
+    "chickenninja"
+  ],
+  "author": "Sean Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chickenninja/secrets-server/issues"
+  },
+  "homepage": "https://github.com/chickenninja/secrets-server#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
