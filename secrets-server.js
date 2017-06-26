@@ -6,7 +6,7 @@ app.get('/ping', function (req, res) {
 })
 
 app.get('/*', function (req, res) {
-	fs.readFile('./secrets/' + req.params[0], function (err, data) {
+	fs.readFile(__dirname + '/secrets/' + req.params[0], function (err, data) {
 		if(err) {
 			return res.status(404).json({success:false, error:'secret not found'})
 		}
